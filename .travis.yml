@@ -21,7 +21,6 @@ notifications.email: false
 node_js: '12'
 
 before_install:
-  - npm install -g npm
   - npm install -g greenkeeper-lockfile@1
 install:
   - npm install  
