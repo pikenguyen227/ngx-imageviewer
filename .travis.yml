@@ -13,7 +13,6 @@ branches.only:
   - /^greenkeeper/.*$/
 
 cache:
-  yarn: true
   directories:
     - node_modules
 
@@ -22,12 +21,15 @@ notifications.email: false
 node_js: '12'
 
 before_install:
-  - yarn global add greenkeeper-lockfile@1
+  - npm install -g npm
+  - npm install -g greenkeeper-lockfile@1
+install:
+  - npm install  
 before_script:
   - greenkeeper-lockfile-update
 script:
-  - yarn build
-  - yarn test
+  - npm run build
+  - npm run test
 after_script:
   - greenkeeper-lockfile-upload
 
@@ -41,4 +43,4 @@ deploy:
     branch: master  
 
 after_success:
-  - yarn travis-deploy-once "yarn semantic-release"
+  - npm run travis-deploy-once "npm run semantic-release"
