@@ -1,9 +1,9 @@
 # Angular 10 - Canvas Image/PDF Viewer
 
-[![travis build](https://travis-ci.org/hallysonh/ngx-imageviewer.svg?branch=master)](https://travis-ci.org/hallysonh/ngx-imageviewer)
-[![Greenkeeper badge](https://badges.greenkeeper.io/hallysonh/ngx-imageviewer.svg)](https://greenkeeper.io/)
-[![version](https://img.shields.io/npm/v/@hallysonh/ngx-imageviewer.svg)](http://npm.im/@hallysonh/ngx-imageviewer)
-[![MIT License](https://img.shields.io/github/license/hallysonh/ngx-imageviewer.svg)](https://opensource.org/licenses/MIT)
+[![travis build](https://travis-ci.org/emazv72/ngx-imageviewer.svg?branch=master)](https://travis-ci.org/emazv72/ngx-imageviewer)
+[![Greenkeeper badge](https://badges.greenkeeper.io/emazv72/ngx-imageviewer.svg)](https://greenkeeper.io/)
+[![version](https://img.shields.io/npm/v/@emazv72/ngx-imageviewer.svg)](http://npm.im/@emazv72/ngx-imageviewer)
+[![MIT License](https://img.shields.io/github/license/emazv72/ngx-imageviewer.svg)](https://opensource.org/licenses/MIT)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 
 This project generate a image/pdf viewer using canvas.
@@ -23,11 +23,11 @@ This project generate a image/pdf viewer using canvas.
 
 ## Demo
 
-Access a demo [here](https://hallysonh.github.io/ngx-imageviewer/) or download this project and execute: `yarn && yarn start` or `npm install && npm run start` to self server it.
+Access a demo [here](https://emazv72.github.io/ngx-imageviewer/) or download this project and execute: `yarn && yarn start` or `npm install && npm run start` to self server it.
 
 ## Install
 
-Run `yarn add @hallysonh/ngx-imageviewer hammerjs` to install it and its dependency.
+Run `yarn add @emazv72/ngx-imageviewer hammerjs` to install it and its dependency.
 
 > hammerjs is currently mandatory, but it will be optional in a future release.
 
@@ -48,7 +48,7 @@ Optionaly, you can also install the font library via npm or yarn.
 After import the module `ImageViewerModule`:
 
 ```typescript
-import { ImageViewerModule } from '@hallysonh/ngx-imageviewer';
+import { ImageViewerModule } from '@emazv72/ngx-imageviewer';
 
 @NgModule({
   imports: [ImageViewerModule],
@@ -87,7 +87,7 @@ To add PDF rendering support, you must first include `pdfjs` by running `yarn ad
 Optionaly, you can provide a custom configuration like below:
 
 ```typescript
-import { IMAGEVIEWER_CONFIG, ImageViewerConfig } from '@hallysonh/ngx-imageviewer';
+import { IMAGEVIEWER_CONFIG, ImageViewerConfig } from '@emazv72/ngx-imageviewer';
 ...
 const MY_IMAGEVIEWER_CONFIG: ImageViewerConfig = {
   buttonStyle: {
