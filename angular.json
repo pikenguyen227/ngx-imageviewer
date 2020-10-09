@@ -36,7 +36,8 @@
             "scripts": [
               {
                 "input": "node_modules/pdfjs-dist/build/pdf.min.js"
-              }, {
+              },
+              {
                 "input": "node_modules/pdfjs-dist/build/pdf.worker.min.js"
               }
             ],
@@ -100,7 +101,8 @@
             "scripts": [
               {
                 "input": "node_modules/pdfjs-dist/build/pdf.min.js"
-              }, {
+              },
+              {
                 "input": "node_modules/pdfjs-dist/build/pdf.worker.min.js"
               }
             ],
@@ -196,5 +198,8 @@
       }
     }
   },
-  "defaultProject": "ngx-imageviewer-app"
+  "defaultProject": "ngx-imageviewer-app",
+  "cli": {
+    "analytics": false
+  }
 }

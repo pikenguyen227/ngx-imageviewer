@@ -6,7 +6,7 @@ import { Converter } from 'showdown';
 
 declare const hljs: any;
 
-const README_URL = 'https://raw.githubusercontent.com/hallysonh/ngx-imageviewer/master/README.md';
+const README_URL = 'https://raw.githubusercontent.com/emazv72/ngx-imageviewer/master/README.md';
 
 @Component({
   selector: 'app-gettingstarted',
