@@ -36,9 +36,10 @@ jobs:
           branch: master
     - stage: "Release"
       name: "Release"
+      script:
+        - npm run build
       deploy:
         provider: script
         skip_cleanup: true
         script:
-        - npm run build
         - npx semantic-release
