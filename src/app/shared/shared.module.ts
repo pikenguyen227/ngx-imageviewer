@@ -5,12 +5,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { LayoutModule } from '@angular/cdk/layout';
 
-/*import {
-  MatToolbarModule, MatButtonModule, MatSidenavModule,
-  MatIconModule, MatListModule, MatFormFieldModule,
-  MatInputModule, MatButtonToggleModule, MatSlideToggleModule, MatProgressSpinnerModule
-} from '@angular/material';*/
-
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
@@ -22,7 +16,6 @@ import { MatInputModule } from '@angular/material/input';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
-
 
 import { ImageViewerModule } from '@emazv72/ngx-imageviewer';
 
