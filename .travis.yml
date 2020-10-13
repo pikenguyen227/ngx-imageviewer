@@ -1,46 +1,42 @@
-sudo: required
-dist: trusty
-
-addons.apt:
-  update: true
-  sources: google-chrome
-  packages: google-chrome-stable
-
 language: node_js
+dist: xenial
 
-branches.only:
-  - master
-  - /^greenkeeper/.*$/
+node_js: 10
+cache: npm
 
-cache:
-  directories:
-    - node_modules
+addons:
+  apt:
+    sources:
+    - google-chrome
+    packages:
+    - google-chrome-stable
 
-notifications.email: false
-
-node_js: '12'
-
-before_install:
-  - npm install -g greenkeeper-lockfile@1
 install:
-  - npm install  
-before_script:
-  - greenkeeper-lockfile-update
-script:
-  - npm run build
-  - npm run test
-  - npm run build
-after_script:
-  - greenkeeper-lockfile-upload
+  npm install
 
-deploy:
-  provider: pages
-  skip-cleanup: true
-  github-token: $GITHUB_TOKEN
-  keep-history: true
-  local-dir: dist/ngx-imageviewer
-  on:
-    branch: master  
-
-after_success:
-  - npm run travis-deploy-once "npm run semantic-release"
+jobs:
+  include:
+    - stage: "Test"
+      name: "Test"
+      script:
+       - npm run build
+       - npm run test
+    - stage: "Docs"
+      name: "Docs"
+      script:
+        - npm run build
+        - npm run build:docs
+      deploy:
+        provider: pages
+        skip_cleanup: true
+        keep_history: true
+        github_token: $GITHUB_TOKEN
+        local_dir: dist/ngx-imageviewer-app
+        on: 
+          branch: master
+    - stage: "Build"
+      name: "Build"
+      script:
+        - npm run build
+      after_success:
+       - npm run semantic-release

@@ -64,7 +64,8 @@
               "aot": true,
               "extractLicenses": true,
               "vendorChunk": false,
-              "buildOptimizer": true
+              "buildOptimizer": true,
+              "baseHref": "https://emazv72.github.io/ngx-imageviewer/"
             }
           }
         },
@@ -171,7 +172,7 @@
           },
           "configurations": {
             "production": {
-              "project": "projects/ngx-imageviewer/ng-package.prod.json"
+              "tsConfig": "projects/ngx-imageviewer/tsconfig.lib.prod.json"
             }
           }
         },
