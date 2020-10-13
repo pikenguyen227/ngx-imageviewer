@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 
 const URLS = [
-  'https://hallysonh.github.io/ngx-imageviewer/pdf-test.pdf',
-  'https://hallysonh.github.io/ngx-imageviewer/assets/imgs/sample-1.jpg'
+  'https://emazv72.github.io/ngx-imageviewer/pdf-test.pdf',
+  'https://emazv72.github.io/ngx-imageviewer/assets/imgs/sample-1.jpg'
 ];
 
 @Component({
