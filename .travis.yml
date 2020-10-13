@@ -30,13 +30,15 @@ jobs:
         provider: pages
         skip_cleanup: true
         keep_history: true
-        github_token: $GITHUB_TOKEN
+        github_token: $GH_TOKEN
         local_dir: dist/ngx-imageviewer-app
         on: 
           branch: master
-    - stage: "Build"
-      name: "Build"
-      script:
+    - stage: "Release"
+      name: "Release"
+      deploy:
+        provider: script
+        skip_cleanup: true
+        script:
         - npm run build
-      after_success:
-       - npm run semantic-release
+        - npx semantic-release
