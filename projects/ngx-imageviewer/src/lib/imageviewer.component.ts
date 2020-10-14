@@ -198,7 +198,7 @@ export class ImageViewerComponent implements AfterViewInit, OnDestroy {
 
   //#region Touch events
   onTap(evt) {
-    const position = { x: evt.pageX, y: evt.pageY };
+    const position = { x: evt.clientX, y: evt.clientY };
     const activeElement = this.getUIElement(this.screenToCanvasCentre(position));
     if (activeElement !== null) { activeElement.onClick(evt); }
   }
