@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SharedModule } from '../shared/shared.module';
 
@@ -8,7 +8,7 @@ describe('ConditionalDisplayComponent', () => {
   let component: ConditionalDisplayComponent;
   let fixture: ComponentFixture<ConditionalDisplayComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       imports: [ BrowserAnimationsModule, SharedModule ],
       declarations: [ ConditionalDisplayComponent ]

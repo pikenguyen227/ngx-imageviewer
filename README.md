@@ -1,4 +1,4 @@
-# Angular 10 - Canvas Image/PDF Viewer
+# Angular >= 10 - Canvas Image/PDF Viewer
 
 [![travis build](https://travis-ci.org/emazv72/ngx-imageviewer.svg?branch=master)](https://travis-ci.org/emazv72/ngx-imageviewer)
 [![Greenkeeper badge](https://badges.greenkeeper.io/emazv72/ngx-imageviewer.svg)](https://greenkeeper.io/)
@@ -26,12 +26,6 @@ This project generate a image/pdf viewer using canvas.
 ## Demo
 
 Access a demo [here](https://emazv72.github.io/ngx-imageviewer/) or download this project and execute: `yarn && yarn start` or `npm install && npm run start` to self server it.
-
-## Install
-
-Run `yarn add @emazv72/ngx-imageviewer hammerjs` to install it and its dependency.
-
-> hammerjs is currently mandatory, but it will be optional in a future release.
 
 ## Icon Font
 

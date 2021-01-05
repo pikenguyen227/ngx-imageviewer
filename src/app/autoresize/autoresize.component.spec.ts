@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SharedModule } from '../shared/shared.module';
 
@@ -8,7 +8,7 @@ describe('AutoResizeComponent', () => {
   let component: AutoResizeComponent;
   let fixture: ComponentFixture<AutoResizeComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       imports: [ BrowserAnimationsModule, SharedModule ],
       declarations: [ AutoResizeComponent ]

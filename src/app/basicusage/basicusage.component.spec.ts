@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SharedModule } from '../shared/shared.module';
 
@@ -8,7 +8,7 @@ describe('BasicUsageComponent', () => {
   let component: BasicUsageComponent;
   let fixture: ComponentFixture<BasicUsageComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       imports: [ BrowserAnimationsModule, SharedModule ],
       declarations: [ BasicUsageComponent ]
