@@ -17,8 +17,8 @@
   ],
   "homepage": "https://github.com/emazv72/ngx-imageviewer#readme",
   "peerDependencies": {
-    "@angular/common": "~11.0.5",
-    "@angular/core": "~11.0.5"
+    "@angular/common": "~11.1.0",
+    "@angular/core": "~11.1.0"
   },
   "optionalDependencies": {
     "pdfjs-dist": "~2.5.207"
