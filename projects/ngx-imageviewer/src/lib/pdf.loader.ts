@@ -1,10 +1,10 @@
 import { ResourceLoader, Dimension, toSquareAngle } from './imageviewer.model';
 import { ImageCacheService } from './imagecache.service';
-import { PDFDocumentProxy, PDFPageProxy, getDocument } from 'pdfjs-dist';
+import { getDocument } from 'pdfjs-dist';
 
 export class PdfResourceLoader extends ResourceLoader {
-  private _pdf: PDFDocumentProxy;
-  private _page: PDFPageProxy;
+  private _pdf;
+  private _page;
   private _pendingReload: boolean;
 
   constructor(private _imageCache: ImageCacheService) {
@@ -18,7 +18,7 @@ export class PdfResourceLoader extends ResourceLoader {
     const loadingTask = getDocument(vm.src);
     vm.loading = true;
     vm.currentItem = 1;
-    loadingTask.promise.then((pdf: PDFDocumentProxy) => {
+    loadingTask.promise.then((pdf) => {
       vm._pdf = pdf;
       vm.totalItem = pdf.numPages;
       vm.loaded = true;
