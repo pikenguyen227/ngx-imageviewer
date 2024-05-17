@@ -34,7 +34,6 @@
     "@angular/platform-browser-dynamic": "^12.2.0",
     "@angular/platform-server": "^12.2.0",
     "@angular/router": "^12.2.0",
-    "pdfjs-dist": "4.2.67",
     "rxjs": "^6.6.3",
     "showdown": "^1.9.1",
     "zone.js": "^0.11.4"
